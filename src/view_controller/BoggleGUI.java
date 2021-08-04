@@ -6,7 +6,7 @@ package view_controller;
  * has a recommended GridPane as the backing pane to store the
  * DiceTray on the left and a GridPane with three elements on the right.
  *
- * @author Rick Mercer and YOUR NAME
+ * @author YOUR NAME and Rick Mercer
 */
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -32,11 +32,7 @@ public class BoggleGUI extends Application {
 
   private void setUpWindow() {
     window = new GridPane();
-    window.setVgap(20);
-    window.setHgap(20);
-    // Add a label to column 0, row 0
     board = new TextArea("");
-    board.setMaxHeight(200);
     board.setMaxWidth(200);
     window.add(board, 1, 1);
   }
